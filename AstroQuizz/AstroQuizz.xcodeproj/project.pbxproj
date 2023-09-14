@@ -10,6 +10,9 @@
 		111463F82A71BE27005DFAD2 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111463F72A71BE27005DFAD2 /* SplashVC.swift */; };
 		113C35C42A741CCB00E66983 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 113C35C32A741CCB00E66983 /* Lottie */; };
 		113C35C82A743C2600E66983 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113C35C72A743C2600E66983 /* Launch Screen.storyboard */; };
+		114DEF402A7C3F2300232B66 /* UserStars+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114DEF3C2A7C3F2300232B66 /* UserStars+CoreDataClass.swift */; };
+		114DEF422A7C3F2300232B66 /* UserResponse+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114DEF3E2A7C3F2300232B66 /* UserResponse+CoreDataClass.swift */; };
+		114FD7602A9670F2004F98FA /* StarChecks+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FD75E2A9670F2004F98FA /* StarChecks+CoreDataClass.swift */; };
 		11D7406E2A703C0E00D1F3B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7406D2A703C0E00D1F3B4 /* AppDelegate.swift */; };
 		11D740702A703C0E00D1F3B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7406F2A703C0E00D1F3B4 /* SceneDelegate.swift */; };
 		11D740752A703C0E00D1F3B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D740732A703C0E00D1F3B4 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* Begin PBXFileReference section */
 		111463F72A71BE27005DFAD2 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		113C35C72A743C2600E66983 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		114DEF3C2A7C3F2300232B66 /* UserStars+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserStars+CoreDataClass.swift"; sourceTree = "<group>"; };
+		114DEF3E2A7C3F2300232B66 /* UserResponse+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserResponse+CoreDataClass.swift"; sourceTree = "<group>"; };
+		114FD75E2A9670F2004F98FA /* StarChecks+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StarChecks+CoreDataClass.swift"; sourceTree = "<group>"; };
 		11D7406A2A703C0E00D1F3B4 /* AstroQuizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroQuizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D7406D2A703C0E00D1F3B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11D7406F2A703C0E00D1F3B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,17 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
+		114DEF462A7C4A2800232B66 /* CoreDataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				114DEF3C2A7C3F2300232B66 /* UserStars+CoreDataClass.swift */,
+				114FD75E2A9670F2004F98FA /* StarChecks+CoreDataClass.swift */,
+				114DEF3E2A7C3F2300232B66 /* UserResponse+CoreDataClass.swift */,
+				11D740762A703C0E00D1F3B4 /* AstroQuizz.xcdatamodeld */,
+			);
+			path = CoreDataFiles;
+			sourceTree = "<group>";
+		};
 		11D740612A703C0E00D1F3B4 = {
 			isa = PBXGroup;
 			children = (
@@ -81,14 +98,14 @@
 		11D7406C2A703C0E00D1F3B4 /* AstroQuizz */ = {
 			isa = PBXGroup;
 			children = (
+				114DEF462A7C4A2800232B66 /* CoreDataFiles */,
+				111463F62A71BC2F005DFAD2 /* LaunchScreen */,
 				11D7406D2A703C0E00D1F3B4 /* AppDelegate.swift */,
 				11D7406F2A703C0E00D1F3B4 /* SceneDelegate.swift */,
 				11D740732A703C0E00D1F3B4 /* Main.storyboard */,
 				11D740902A7050BD00D1F3B4 /* QuizcellTVC.swift */,
 				11D740792A703C0E00D1F3B4 /* Assets.xcassets */,
-				111463F62A71BC2F005DFAD2 /* LaunchScreen */,
 				11D7407E2A703C0E00D1F3B4 /* Info.plist */,
-				11D740762A703C0E00D1F3B4 /* AstroQuizz.xcdatamodeld */,
 				11D740842A703DB000D1F3B4 /* AppConstants.swift */,
 				11D740872A703DB000D1F3B4 /* ConstilationVC.swift */,
 				11D740852A703DB000D1F3B4 /* QuizVC.swift */,
@@ -176,15 +193,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				111463F82A71BE27005DFAD2 /* SplashVC.swift in Sources */,
+				114DEF422A7C3F2300232B66 /* UserResponse+CoreDataClass.swift in Sources */,
 				11D740912A7050BD00D1F3B4 /* QuizcellTVC.swift in Sources */,
 				11D7408C2A703DB000D1F3B4 /* WorldVC.swift in Sources */,
 				11D7408B2A703DB000D1F3B4 /* QuizVC.swift in Sources */,
 				11D7406E2A703C0E00D1F3B4 /* AppDelegate.swift in Sources */,
 				11D7408F2A703DB000D1F3B4 /* worldInfoCellVC.swift in Sources */,
+				114FD7602A9670F2004F98FA /* StarChecks+CoreDataClass.swift in Sources */,
 				11D7408A2A703DB000D1F3B4 /* AppConstants.swift in Sources */,
 				11D740702A703C0E00D1F3B4 /* SceneDelegate.swift in Sources */,
 				11D740782A703C0E00D1F3B4 /* AstroQuizz.xcdatamodeld in Sources */,
 				11D7408D2A703DB000D1F3B4 /* ConstilationVC.swift in Sources */,
+				114DEF402A7C3F2300232B66 /* UserStars+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U82Y8C7USM;
@@ -351,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U82Y8C7USM;

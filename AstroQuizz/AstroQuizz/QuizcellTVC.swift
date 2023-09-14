@@ -8,7 +8,7 @@
 import UIKit
 
 class QuizcellTVC: UITableViewCell {
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -16,10 +16,10 @@ class QuizcellTVC: UITableViewCell {
         self.contentView.layer.cornerRadius = 20
         
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
@@ -29,10 +29,11 @@ class QuizcellTVC: UITableViewCell {
     
     var answer:Int?
     
+    var starno:Int?
     
     
     @IBOutlet weak var questionTV: UITextView!
-   
+    
     var optionSelect:UITapGestureRecognizer?
     
     @IBOutlet var optionLBL: [UILabel]!{
@@ -55,22 +56,37 @@ class QuizcellTVC: UITableViewCell {
         let tag = sender.view?.layer.value(forKey: "tag")
         print(tag!)
         
-            if tag as! Int == answer!{
-                  optionLBL[tag as! Int ].layer.backgroundColor = UIColor.green.cgColor
-                  
-                  for label in optionLBL{
-                      if label.tag != tag as! Int{
-                          label.layer.backgroundColor = UIColor.systemMint.cgColor
-                      }
-                  }
-              }else{
-                  optionLBL[tag as! Int ].layer.backgroundColor = UIColor.red.cgColor
-                  for label in optionLBL{
-                      if label.tag != tag as! Int{
-                          label.layer.backgroundColor = UIColor.systemMint.cgColor
-                      }
-                  }
-               }
+        do {
+            try UserResponse.deleteRecord(for: world!, star: Int32(starno!), question: Int32(questionNum!), in: AppDelegate.viewContext)
+        } catch {
+            print("Error deleting response: \(error)")
+        }
+
+        
+        do {
+            try UserResponse.create(world!, star: Int32(starno!), question: Int32(questionNum!), response: tag as! Int32, in: AppDelegate.viewContext)
+        } catch {
+            print("Error inserting response \(error)")
+        }
+        
+        
+        
+        if tag as! Int == answer!{
+            optionLBL[tag as! Int ].layer.backgroundColor = UIColor.green.cgColor
+            
+            for label in optionLBL{
+                if label.tag != tag as! Int{
+                    label.layer.backgroundColor = UIColor.systemMint.cgColor
+                }
+            }
+        }else{
+            optionLBL[tag as! Int ].layer.backgroundColor = UIColor.red.cgColor
+            for label in optionLBL{
+                if label.tag != tag as! Int{
+                    label.layer.backgroundColor = UIColor.systemMint.cgColor
+                }
+            }
+        }
     }
     
     

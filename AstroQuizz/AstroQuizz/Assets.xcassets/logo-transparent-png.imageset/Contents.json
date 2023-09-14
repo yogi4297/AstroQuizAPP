@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Draco.jpeg",
+      "filename" : "logo-transparent-png.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Draco@2x.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Draco@3x.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

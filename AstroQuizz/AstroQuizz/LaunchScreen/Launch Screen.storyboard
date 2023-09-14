@@ -18,21 +18,47 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="A9y-wf-q4D">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Astro Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3E9-4y-dez">
-                                <rect key="frame" x="62" y="201" width="269" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="60"/>
-                                <color key="textColor" red="1" green="0.79638052292717132" blue="0.095696758575365415" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MBF-st-rCS">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3Y-Jx-MJj">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="76"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Astro Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3E9-4y-dez">
+                                        <rect key="frame" x="0.0" y="84" width="393" height="75.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="42"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="5" height="-5"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPN-aG-KUf">
+                                        <rect key="frame" x="0.0" y="167.66666666666669" width="393" height="591.33333333333326"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3E9-4y-dez" firstAttribute="height" secondItem="MBF-st-rCS" secondAttribute="height" multiplier="0.1" id="NOT-wt-wfv"/>
+                                    <constraint firstItem="w3Y-Jx-MJj" firstAttribute="height" secondItem="MBF-st-rCS" secondAttribute="height" multiplier="0.1" id="miW-op-kmf"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="A9y-wf-q4D" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="DEN-R5-n7x"/>
+                            <constraint firstItem="MBF-st-rCS" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="929-EA-xSQ"/>
+                            <constraint firstItem="A9y-wf-q4D" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="DEN-R5-n7x"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="MBF-st-rCS" secondAttribute="bottom" id="Ksl-h7-Rco"/>
+                            <constraint firstItem="MBF-st-rCS" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" id="Mtp-eR-SME"/>
                             <constraint firstItem="A9y-wf-q4D" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="OQv-aj-ra6"/>
                             <constraint firstItem="A9y-wf-q4D" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="bMU-3W-TxT"/>
-                            <constraint firstItem="A9y-wf-q4D" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="sW3-OA-VtQ"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="MBF-st-rCS" secondAttribute="trailing" id="fbg-th-WtW"/>
+                            <constraint firstItem="A9y-wf-q4D" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="sW3-OA-VtQ"/>
                         </constraints>
                     </view>
                 </viewController>

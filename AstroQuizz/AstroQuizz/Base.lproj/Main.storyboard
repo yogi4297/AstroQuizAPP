@@ -106,13 +106,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="O02-cq-n3J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3jh-Tk-Wsa"/>
+                            <constraint firstItem="O02-cq-n3J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3jh-Tk-Wsa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a5f-IG-nOX" secondAttribute="bottom" constant="20" id="5Wq-17-vlM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a5f-IG-nOX" secondAttribute="trailing" constant="20" id="CKy-Qg-Q7W"/>
                             <constraint firstItem="a5f-IG-nOX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="aUZ-Ol-pZK"/>
                             <constraint firstItem="a5f-IG-nOX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dMm-cf-c0q"/>
                             <constraint firstAttribute="bottom" secondItem="O02-cq-n3J" secondAttribute="bottom" id="kw3-bM-tdZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O02-cq-n3J" secondAttribute="trailing" id="lr1-gh-rlC"/>
+                            <constraint firstAttribute="trailing" secondItem="O02-cq-n3J" secondAttribute="trailing" id="lr1-gh-rlC"/>
                             <constraint firstItem="O02-cq-n3J" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sZt-Gj-nHk"/>
                         </constraints>
                     </view>
@@ -275,14 +275,7 @@
                             <constraint firstItem="M80-ox-Y5K" firstAttribute="top" secondItem="TyE-DH-BV0" secondAttribute="top" constant="20" id="usW-3Z-NVB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="HMR-Y0-aTQ">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="lLn-XA-XbM">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="onSave:" destination="fl2-4r-fCd" id="5nm-YW-NLJ"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="HMR-Y0-aTQ"/>
                     <connections>
                         <outlet property="quizTV" destination="M80-ox-Y5K" id="9Pq-Hb-fq9"/>
                     </connections>

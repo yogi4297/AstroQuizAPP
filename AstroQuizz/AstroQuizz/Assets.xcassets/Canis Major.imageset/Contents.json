@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "istockphoto1@1x.jpeg",
+      "filename" : "Canis Major.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "istockphoto1@2x.jpeg",
+      "filename" : "Canis Major@2x.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "istockphoto1@3x.jpeg",
+      "filename" : "Canis Major@3x.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

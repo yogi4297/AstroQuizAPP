@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22F82" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="StarChecks" representedClassName=".StarChecks" syncable="YES" codeGenerationType="category">
+        <attribute name="completedFlag" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="star" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="world" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="UserResponse" representedClassName=".UserResponse" syncable="YES" codeGenerationType="category">
+        <attribute name="question" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="star" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userAnswer" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="world" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="UserStars" representedClassName="UserStars" syncable="YES" codeGenerationType="category">
+        <attribute name="star" optional="YES" attributeType="String"/>
+        <attribute name="world" optional="YES" attributeType="String"/>
+    </entity>
+</model>
