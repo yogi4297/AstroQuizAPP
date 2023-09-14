@@ -51,6 +51,7 @@ class WorldVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         do {
             
             if let points = try UserStars.fetchStar(forWorld: worldList[indexPath.row].worldName, in: AppDelegate.viewContext){
+                
                 cell.starLBL.text = points
             }
             

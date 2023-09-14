@@ -72,7 +72,7 @@ class QuizVC: UIViewController ,UITableViewDelegate,UITableViewDataSource{
                 
                 
                 
-                if Int(resp.userAnswer)==(list[indexPath.row].answer){
+                if Int(resp.userAnswer)==(list[indexPath.row].answer-1){
                     cell.optionLBL[Int(resp.userAnswer)].layer.backgroundColor = UIColor.green.cgColor
                     print()
                 }

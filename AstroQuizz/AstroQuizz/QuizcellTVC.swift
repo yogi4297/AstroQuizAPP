@@ -71,7 +71,7 @@ class QuizcellTVC: UITableViewCell {
         
         
         
-        if tag as! Int == answer!{
+        if tag as! Int == (answer!-1){
             optionLBL[tag as! Int ].layer.backgroundColor = UIColor.green.cgColor
             
             for label in optionLBL{

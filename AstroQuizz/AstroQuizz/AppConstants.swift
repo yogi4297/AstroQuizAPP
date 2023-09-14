@@ -136,7 +136,7 @@ struct question{
 
 
 
-var questionList = ["Aquarius":[(question(question: "What is the shape of the Earth?", options: ["Round","Square","Flat",""], answer:0),1),
+var questionList = ["Aquarius":[(question(question: "What is the shape of the Earth?", options: ["Round","Square","Flat",""], answer:1),1),
                                 (question(question: "What is the largest planet in our solar system?", options: ["Saturn","Jupiter","Neptune",""], answer:3),1),
                                 (question(question: "Which planet is closest to the Sun?", options: ["Venus","Earth","Mars","Mercury"], answer:4),1),
                                 (question(question: "What is the name of the galaxy we live in?", options: ["Andromeda","Milky Way","Orion",""], answer:2),1),
