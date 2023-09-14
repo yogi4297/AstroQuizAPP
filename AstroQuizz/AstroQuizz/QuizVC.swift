@@ -165,7 +165,7 @@ class QuizVC: UIViewController ,UITableViewDelegate,UITableViewDataSource{
             for response in rec{
                 var i = 0
                 for l in list{
-                    if i==response.question && l.answer==response.userAnswer{
+                    if i==response.question && l.answer-1==response.userAnswer{
                         count = count+1
                         
                     }
@@ -173,18 +173,17 @@ class QuizVC: UIViewController ,UITableViewDelegate,UITableViewDataSource{
                 }
             }
         }
-        
-//        print(list.count)
-//        print(count)
+        print(count)
         
         if list.count==count{
+            print("check")
             do {
                 
                 let record = try StarChecks.fetchRecord(for: constilationName!, star: Int32(star!), in: AppDelegate.viewContext)
                 if let stars=try UserStars.fetchStar(forWorld: constilationName!, in: AppDelegate.viewContext){
                     
                 if record == nil{
-                        print(21)
+                        print("updating the records in user stars")
                         try UserStars.update(world: constilationName!, star: "\(stars)⭐️", in: AppDelegate.viewContext)
                         try StarChecks.create(constilationName!, star: Int32(star!), flag: true, in: AppDelegate.viewContext)
                     displayAlert()
@@ -194,7 +193,7 @@ class QuizVC: UIViewController ,UITableViewDelegate,UITableViewDataSource{
                     print(22)
                     
                     if record == nil{
-                        print(21)
+                        print("creating the records in user stars")
                         try UserStars.create(constilationName!, star: "⭐️", in: AppDelegate.viewContext)
                         try StarChecks.create(constilationName!, star: Int32(star!), flag: true, in: AppDelegate.viewContext)
                         displayAlert()
