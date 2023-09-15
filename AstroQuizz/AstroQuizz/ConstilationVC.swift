@@ -66,7 +66,8 @@ class ConstilationVC: UIViewController {
         print(starno)
         const.constilationName = constilationName
         const.star=starno
-        
+        print(constilationName)
+        print(starno)
     }
     
     
