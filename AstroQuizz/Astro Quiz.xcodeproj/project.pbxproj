@@ -32,7 +32,7 @@
 		114DEF3C2A7C3F2300232B66 /* UserStars+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserStars+CoreDataClass.swift"; sourceTree = "<group>"; };
 		114DEF3E2A7C3F2300232B66 /* UserResponse+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserResponse+CoreDataClass.swift"; sourceTree = "<group>"; };
 		114FD75E2A9670F2004F98FA /* StarChecks+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StarChecks+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11D7406A2A703C0E00D1F3B4 /* AstroQuizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroQuizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11D7406A2A703C0E00D1F3B4 /* Astro Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astro Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D7406D2A703C0E00D1F3B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11D7406F2A703C0E00D1F3B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		11D740742A703C0E00D1F3B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		11D7406B2A703C0E00D1F3B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11D7406A2A703C0E00D1F3B4 /* AstroQuizz.app */,
+				11D7406A2A703C0E00D1F3B4 /* Astro Quiz.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11D740692A703C0E00D1F3B4 /* AstroQuizz */ = {
+		11D740692A703C0E00D1F3B4 /* Astro Quiz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11D740812A703C0E00D1F3B4 /* Build configuration list for PBXNativeTarget "AstroQuizz" */;
+			buildConfigurationList = 11D740812A703C0E00D1F3B4 /* Build configuration list for PBXNativeTarget "Astro Quiz" */;
 			buildPhases = (
 				11D740662A703C0E00D1F3B4 /* Sources */,
 				11D740672A703C0E00D1F3B4 /* Frameworks */,
@@ -130,12 +130,12 @@
 			);
 			dependencies = (
 			);
-			name = AstroQuizz;
+			name = "Astro Quiz";
 			packageProductDependencies = (
 				113C35C32A741CCB00E66983 /* Lottie */,
 			);
 			productName = AstroQuizz;
-			productReference = 11D7406A2A703C0E00D1F3B4 /* AstroQuizz.app */;
+			productReference = 11D7406A2A703C0E00D1F3B4 /* Astro Quiz.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +153,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 11D740652A703C0E00D1F3B4 /* Build configuration list for PBXProject "AstroQuizz" */;
+			buildConfigurationList = 11D740652A703C0E00D1F3B4 /* Build configuration list for PBXProject "Astro Quiz" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -169,7 +169,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11D740692A703C0E00D1F3B4 /* AstroQuizz */,
+				11D740692A703C0E00D1F3B4 /* Astro Quiz */,
 			);
 		};
 /* End PBXProject section */
@@ -348,23 +348,28 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U82Y8C7USM;
+				DEVELOPMENT_TEAM = G2ZAX779U4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AstroQuizz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Astro Quiz";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.AstroQuizz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VKBandla.AstroQuizz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -377,23 +382,28 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U82Y8C7USM;
+				DEVELOPMENT_TEAM = G2ZAX779U4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AstroQuizz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Astro Quiz";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.AstroQuizz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VKBandla.AstroQuizz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,7 +413,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11D740652A703C0E00D1F3B4 /* Build configuration list for PBXProject "AstroQuizz" */ = {
+		11D740652A703C0E00D1F3B4 /* Build configuration list for PBXProject "Astro Quiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11D7407F2A703C0E00D1F3B4 /* Debug */,
@@ -412,7 +422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11D740812A703C0E00D1F3B4 /* Build configuration list for PBXNativeTarget "AstroQuizz" */ = {
+		11D740812A703C0E00D1F3B4 /* Build configuration list for PBXNativeTarget "Astro Quiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11D740822A703C0E00D1F3B4 /* Debug */,
